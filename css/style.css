@@ -1,0 +1,610 @@
+/*=====================================
+    DYNAMO CONCEPTZ
+    PREMIUM DIGITAL FLYER
+======================================*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#050505;
+    color:#fff;
+    overflow-x:hidden;
+}
+
+/* ==========================
+   Animated Background
+========================== */
+
+body::before{
+    content:"";
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:
+    radial-gradient(circle at 20% 20%,rgba(255,215,0,.18),transparent 30%),
+    radial-gradient(circle at 80% 30%,rgba(255,215,0,.12),transparent 35%),
+    radial-gradient(circle at 50% 90%,rgba(255,215,0,.08),transparent 30%);
+    z-index:-2;
+    animation:bgMove 12s ease-in-out infinite alternate;
+}
+
+@keyframes bgMove{
+
+    from{
+        transform:scale(1) rotate(0deg);
+    }
+
+    to{
+        transform:scale(1.2) rotate(6deg);
+    }
+
+}
+
+/* ==========================
+   HERO
+========================== */
+
+.hero{
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    position:relative;
+
+    overflow:hidden;
+
+    padding:50px 20px;
+
+}
+
+/* Overlay */
+
+.overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    background:linear-gradient(rgba(0,0,0,.65),
+    rgba(0,0,0,.82));
+
+    z-index:0;
+
+}
+
+.container{
+
+    position:relative;
+
+    z-index:2;
+
+    max-width:900px;
+
+}
+
+/* Logo */
+
+.logo{
+
+    width:190px;
+
+    margin-bottom:25px;
+
+    filter:drop-shadow(0 0 25px gold);
+
+    animation:floatLogo 4s ease-in-out infinite;
+
+}
+
+@keyframes floatLogo{
+
+0%{
+transform:translateY(0);
+}
+
+50%{
+transform:translateY(-12px);
+}
+
+100%{
+transform:translateY(0);
+}
+
+}
+
+/* Heading */
+
+.hero h1{
+
+font-size:72px;
+
+font-weight:900;
+
+letter-spacing:5px;
+
+line-height:1.1;
+
+margin-bottom:15px;
+
+}
+
+.hero h1 span{
+
+display:block;
+
+color:#D4AF37;
+
+text-shadow:0 0 20px gold;
+
+}
+
+.motto{
+
+font-size:22px;
+
+font-weight:600;
+
+color:#D4AF37;
+
+margin:20px 0;
+
+min-height:35px;
+
+}
+
+.description{
+
+font-size:18px;
+
+line-height:1.9;
+
+max-width:760px;
+
+margin:auto;
+
+opacity:.9;
+
+}/* ==========================
+   BUTTONS
+========================== */
+
+.btn,
+.whatsapp{
+
+display:inline-block;
+
+margin-top:35px;
+
+padding:16px 45px;
+
+background:linear-gradient(45deg,#D4AF37,gold);
+
+color:#000;
+
+text-decoration:none;
+
+font-weight:700;
+
+border-radius:50px;
+
+box-shadow:0 0 25px rgba(255,215,0,.5);
+
+transition:.4s;
+
+}
+
+.btn:hover,
+.whatsapp:hover{
+
+transform:translateY(-6px);
+
+box-shadow:0 0 35px gold;
+
+}
+
+/* ==========================
+   SERVICES
+========================== */
+
+#services{
+
+padding:100px 40px;
+
+text-align:center;
+
+}
+
+#services h2{
+
+font-size:48px;
+
+color:#D4AF37;
+
+margin-bottom:60px;
+
+text-transform:uppercase;
+
+letter-spacing:3px;
+
+}
+
+.cards{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+
+gap:30px;
+
+max-width:1200px;
+
+margin:auto;
+
+}
+
+.card{
+
+background:rgba(255,255,255,.05);
+
+backdrop-filter:blur(12px);
+
+border:1px solid rgba(255,215,0,.15);
+
+border-radius:20px;
+
+padding:40px 25px;
+
+transition:.4s;
+
+}
+
+.card:hover{
+
+transform:translateY(-12px);
+
+border-color:gold;
+
+box-shadow:0 0 35px rgba(255,215,0,.35);
+
+}
+
+.card i{
+
+font-size:55px;
+
+color:#D4AF37;
+
+margin-bottom:20px;
+
+}
+
+.card h3{
+
+font-size:26px;
+
+margin-bottom:15px;
+
+}
+
+.card p{
+
+line-height:1.8;
+
+opacity:.85;
+
+}
+
+/* ==========================
+   CONTACT
+========================== */
+
+.contact{
+
+padding:100px 20px;
+
+text-align:center;
+
+}
+
+.contact h2{
+
+font-size:45px;
+
+color:#D4AF37;
+
+margin-bottom:40px;
+
+}
+
+.contact-box{
+
+max-width:700px;
+
+margin:auto;
+
+background:rgba(255,255,255,.05);
+
+padding:40px;
+
+border-radius:20px;
+
+border:1px solid rgba(255,215,0,.2);
+
+}
+
+.contact-box p{
+
+margin:18px 0;
+
+font-size:18px;
+
+}
+
+.contact-box i{
+
+color:#D4AF37;
+
+margin-right:12px;
+
+width:25px;
+
+}/* ==========================
+   FOOTER
+========================== */
+
+footer{
+
+    text-align:center;
+
+    padding:50px 20px;
+
+    background:#000;
+
+    border-top:1px solid rgba(255,215,0,.2);
+
+}
+
+footer h3{
+
+    color:#D4AF37;
+
+    font-size:30px;
+
+    margin-bottom:10px;
+
+}
+
+footer p{
+
+    margin-bottom:15px;
+
+    opacity:.85;
+
+}
+
+footer small{
+
+    color:#888;
+
+}
+
+/* ==========================
+   GOLD GLOW ANIMATION
+========================== */
+
+@keyframes glow{
+
+    0%{
+
+        text-shadow:0 0 10px gold;
+
+    }
+
+    50%{
+
+        text-shadow:
+        0 0 20px gold,
+        0 0 40px gold;
+
+    }
+
+    100%{
+
+        text-shadow:0 0 10px gold;
+
+    }
+
+}
+
+.hero h1 span{
+
+    animation:glow 2.5s infinite;
+
+}
+
+/* ==========================
+   FADE UP ANIMATION
+========================== */
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+.hero .container{
+
+    animation:fadeUp 1.2s ease;
+
+}
+
+/* ==========================
+   SCROLLBAR
+========================== */
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#111;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#D4AF37;
+
+    border-radius:30px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:gold;
+
+}
+
+/* ==========================
+   TEXT SELECTION
+========================== */
+
+::selection{
+
+    background:#D4AF37;
+
+    color:#000;
+
+}
+
+/* ==========================
+   RESPONSIVE DESIGN
+========================== */
+
+@media(max-width:992px){
+
+.hero h1{
+
+font-size:55px;
+
+}
+
+.description{
+
+font-size:17px;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.hero{
+
+padding:50px 20px;
+
+}
+
+.logo{
+
+width:140px;
+
+}
+
+.hero h1{
+
+font-size:40px;
+
+letter-spacing:2px;
+
+}
+
+.motto{
+
+font-size:18px;
+
+}
+
+.description{
+
+font-size:15px;
+
+}
+
+#services h2,
+
+.contact h2{
+
+font-size:35px;
+
+}
+
+.contact-box{
+
+padding:30px 20px;
+
+}
+
+}
+
+@media(max-width:480px){
+
+.hero h1{
+
+font-size:32px;
+
+}
+
+.logo{
+
+width:120px;
+
+}
+
+.btn,
+
+.whatsapp{
+
+width:100%;
+
+}
+
+}
+
+/* ==========================
+   END OF STYLE.CSS
+========================== */

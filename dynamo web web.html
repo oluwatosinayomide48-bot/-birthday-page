@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamo Conceptz</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: #121212;
+            color: #f9f9f9;
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        h1,
+        h2,
+        h3 {
+            color: #FFD700;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        button {
+            background-color: #FFD700;
+            color: #121212;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            opacity: 0.9;
+        }
+
+        header {
+            background: #1a1a1a;
+            padding: 20px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            gap: 30px;
+        }
+
+        nav ul li a {
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #FFD700;
+        }
+
+        section {
+            padding: 80px 0;
+        }
+
+        .hero {
+            height: 100vh;
+            background: url('hero-placeholder.jpg') center/cover no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+
+        .services {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 40px;
+        }
+
+        .service-box {
+            background: #1a1a1a;
+            padding: 20px;
+            border: 2px solid #FFD700;
+            flex: 1 1 250px;
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        .service-box:hover {
+            transform: scale(1.05);
+            border-color: #fff;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 40px;
+        }
+
+        .gallery-item {
+            background: #1a1a1a;
+            padding: 10px;
+            border: 2px solid #FFD700;
+            flex: 1 1 250px;
+            text-align: center;
+            overflow: hidden;
+            cursor: pointer;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: 0.3s;
+        }
+
+        .gallery-item img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Lightbox Styles */
+        #lightbox {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.9);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        #lightbox img {
+            max-width: 90%;
+            max-height: 90%;
+            border: 4px solid #FFD700;
+        }
+
+        #lightbox span {
+            position: absolute;
+            top: 30px;
+            right: 30px;
+            font-size: 2rem;
+            color: #FFD700;
+            cursor: pointer;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            max-width: 600px;
+            margin: auto;
+        }
+
+        input,
+        textarea,
+        select {
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            width: 100%;
+        }
+
+        .contact-info {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .socials a {
+            margin: 0 10px;
+            color: #FFD700;
+            font-weight: bold;
+        }
+
+        @media(max-width:768px) {
+            nav ul {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+
+            .hero p {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="hero" id="home">
+        <h1>Dynamo Conceptz</h1>
+        <p>Design is intelligence made visible</p>
+        <button onclick="document.getElementById('gallery').scrollIntoView({behavior:'smooth'})">View Our Works</button>
+    </section>
+    <section id="about">
+        <div class="container">
+            <h1>About Us</h1>
+            <p>Founded by Adekunle Adejumo, Dynamo Conceptz is a creative powerhouse delivering top-tier design,
+                printing, and
+                photography services. With a passion for excellence and innovation, we’ve built a reputation for turning
+                imagination into reality — intelligently and visibly.</p>
+            <h2>Our Vision</h2>
+            <p>To redefine creativity through quality, innovation, and precision.</p>
+            <h2>Our Mission</h2>
+            <p>To deliver visually intelligent designs that speak louder than words.</p>
+        </div>
+    </section>
+    <section id="services">
+        <div class="container">
+            <h1>Our Services</h1>
+            <div class="services">
+                <div class="service-box">
+                    <h2>Graphic Design</h2>
+                    <p>Logos, flyers, brochures, and branding materials.</p>
+                </div>
+                <div class="service-box">
+                    <h2>Printing & Large Format</h2>
+                    <p>Banners, flex, stickers, and more.</p>
+                </div>
+                <div class="service-box">
+                    <h2>Branding & Framing</h2>
+                    <p>Customized frames, product branding, and souvenirs.</p>
+                </div>
+                <div class="service-box">
+                    <h2>Photography</h2>
+                    <p>Portraits, events, product shoots, and creative sessions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="gallery">
+        <div class="container">
+            <h1>Gallery</h1>
+            <div class="gallery">
+                <div class="gallery-item"><img src="dyD.jpg" alt="Sample Work 1"></div>
+                <div class="gallery-item"><img src="CELE BANNER.png" alt="Sample Work 2"></div>
+                <div class="gallery-item"><img src="dynamo..png" alt="Sample Work 3"></div>
+                <div class="gallery-item"><img src="bro timi.png" alt="Sample Work 4"></div>
+            </div>
+        </div>
+    </section>
+    <!-- Lightbox Overlay -->
+    <div id="lightbox">
+        <span id="close">&times;</span>
+        <img src="" alt="Lightbox Image">
+    </div>
+    <section id="contact">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <p style="text-align:center; margin-top:20px;">Let’s Bring Your Ideas to Life</p>
+            <form>
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <input type="tel" name="phone" placeholder="Your Phone" required>
+                <select name="project-type" required>
+                    <option value="">Select Project Type</option>
+                    <option value="design">Design</option>
+                    <option value="printing">Printing</option>
+                    <option value="photography">Photography</option>
+                    <option value="other">Other</option>
+                </select>
+                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit">Submit Request</button>
+            </form>
+            <div class="contact-info">
+                <p>📞 Call: +234 810 726 2707</p>
+                <p>💬 WhatsApp: +234 703 616 0117</p>
+                <p>📧 Email: officialdynamo38@gmail.com</p>
+                <p>📧 Email: oluwatosinayomide48@gmail.com</p>
+                <div class="socials">
+                    <a href="https://www.facebook.com/profile.php?id=61586040551706&mibextid=rS40aB7S9Ucbxw6v">Facebook</a> |
+                    <a href="https://tiktok.com/https://tiktok.com/@dynamo_grapghixconceptz">TikTok</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        // Lightbox Script
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = lightbox.querySelector('img');
+        const closeBtn = document.getElementById('close');
+        document.querySelectorAll('.gallery-item img').forEach(img => {
+            img.addEventListener('click', () => {
+                lightbox.style.display = 'flex';
+                lightboxImg.src = img.src;
+            });
+        });
+        closeBtn.addEventListener('click', () => { lightbox.style.display = 'none'; });
+        lightbox.addEventListener('click', e => { if (e.target === lightbox) lightbox.style.display = 'none'; });
+    </script>
+</body>
+
+</html>

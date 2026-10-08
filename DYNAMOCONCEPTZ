@@ -1,0 +1,122 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dynamo Conceptz | Order Creative Services</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
+    body{background:#0b0b0b;color:#fff}
+    a{text-decoration:none}/* HERO */
+.hero{min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:20px;background:linear-gradient(rgba(0,0,0,.8),rgba(0,0,0,.9)),url('hero.jpg') center/cover}
+.hero h1{font-size:3.2rem;color:#d4af37}
+.hero span{color:#fff}
+.hero p{max-width:700px;margin:20px auto;font-size:1.15rem;color:#ccc}
+
+.cta-buttons{margin-top:35px}
+.btn{display:inline-block;margin:10px;padding:14px 34px;border-radius:40px;font-weight:600;font-size:1rem}
+.btn-gold{background:#d4af37;color:#000}
+.btn-outline{border:2px solid #d4af37;color:#d4af37}
+
+/* TRUST */
+.trust{background:#111;padding:60px 10%;text-align:center}
+.trust h2{color:#d4af37;margin-bottom:15px}
+.trust p{color:#bbb}
+
+/* SERVICES */
+section{padding:90px 10%}
+.section-title{text-align:center;margin-bottom:60px}
+.section-title h2{font-size:2.3rem;color:#d4af37}
+
+.services{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:30px}
+.service{background:#141414;padding:35px;border-radius:20px;text-align:center;transition:.4s}
+.service:hover{transform:translateY(-10px);border:1px solid #d4af37}
+.service h3{color:#d4af37;margin-bottom:10px}
+.service p{color:#bbb;font-size:.95rem}
+
+/* FINAL CTA */
+.final-cta{background:linear-gradient(135deg,#111,#000);border-top:1px solid #d4af37;text-align:center}
+.final-cta h2{color:#d4af37;margin-bottom:15px}
+.final-cta p{color:#ccc;margin-bottom:30px}
+
+/* SOCIALS */
+.socials{text-align:center;margin-top:40px}
+.socials a{margin:0 12px;color:#d4af37;font-weight:600}
+
+footer{text-align:center;padding:25px;background:#070707;color:#777}
+
+@media(max-width:768px){
+  .hero h1{font-size:2.4rem}
+}
+
+  </style>
+</head>
+<body>  <!-- HERO -->  <section class="hero">
+    <div>
+      <h1>Need <span>Design, Printing or Photography</span>?</h1>
+      <p>We help businesses stand out with bold designs, premium prints and professional branding that attract customers and increase sales.</p>
+      <div class="cta-buttons">
+        <a href="https://wa.me/c/2347036160117" class="btn btn-gold">Order on WhatsApp</a>
+        <a href="#services" class="btn btn-outline">See What We Do</a>
+      </div>
+    </div>
+  </section>  <!-- TRUST -->  <div class="trust">
+    <h2>Trusted Creative Partner</h2>
+    <p>Fast delivery • Quality output • Affordable pricing • Professional service</p>
+  </div>  <!-- SERVICES -->  <section id="services">
+    <div class="section-title">
+      <h2>Our Services</h2>
+    </div>
+    <div class="services">
+      <div class="service">
+        <h3>Graphic Design</h3>
+        <p>Flyers, logos, banners, social media designs that convert.</p>
+      </div>
+      <div class="service">
+        <h3>Large Format Printing</h3>
+        <p>Flex banners, stickers, posters, backdrops and frames.</p>
+      </div>
+      <div class="service">
+        <h3>Branding</h3>
+        <p>Complete business branding that builds trust and visibility.</p>
+      </div>
+      <div class="service">
+        <h3>Photography</h3>
+        <p>Events, product and brand photography with clean finishing.</p>
+      </div>
+    </div>
+  </section>  <!-- PORTFOLIO -->  <section id="portfolio">
+    <div class="section-title">
+      <h2>Sample Works</h2>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:25px">
+      <div style="background:#141414;border-radius:15px;overflow:hidden">
+        <img src="sample1.jpg" alt="Design Sample" style="width:100%;display:block">
+      </div>
+      <div style="background:#141414;border-radius:15px;overflow:hidden">
+        <img src="sample2.jpg" alt="Printing Sample" style="width:100%;display:block">
+      </div>
+      <div style="background:#141414;border-radius:15px;overflow:hidden">
+        <img src="sample3.jpg" alt="Branding Sample" style="width:100%;display:block">
+      </div>
+      <div style="background:#141414;border-radius:15px;overflow:hidden">
+        <img src="sample4.jpg" alt="Photography Sample" style="width:100%;display:block">
+      </div>
+      <div style="background:#141414;border-radius:15px;overflow:hidden">
+        <img src="sample5.jpg" alt="Creative Work" style="width:100%;display:block">
+      </div>
+    </div>
+  </section>  <!-- FINAL CTA -->  <section class="final-cta">
+    <h2>Ready to Start?</h2>
+    <p>Click below and let’s bring your ideas to life today.</p>
+    <a href="https://wa.me/c/2347036160117" class="btn btn-gold">Chat on WhatsApp Now</a><div class="socials">
+  <a href="https://facebook.com/Adekunle.Oluwasegun" target="_blank">Facebook</a> |
+  <a href="https://vm.tiktok.com/ZSHoDVL7tjURQ-SCgQS/" target="_blank">TikTok</a> |
+  <a href="https://wa.me/c/2347036160117" target="_blank">WhatsApp Catalog</a>
+</div>
+
+  </section>  <footer>
+    <p>📞 Call: 0810 726 2707 | 💬 WhatsApp: +234 703 616 0117</p>
+    <p>© 2026 Dynamo Conceptz • Design is intelligently made visible</p>
+  </footer></body>
+</html>

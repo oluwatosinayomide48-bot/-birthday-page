@@ -1,0 +1,241 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dynamo Conceptz</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!-- HERO SECTION -->
+
+    <section class="hero">
+
+        <div class="overlay"></div>
+
+        <div class="container">
+
+            <img src="logo.png" class="logo" alt="Dynamo Logo">
+
+            <h1>
+                DYNAMO
+                <span>CONCEPTZ</span>
+            </h1>
+
+            <p class="motto"></p>
+
+            <p class="description">
+
+                We bring your ideas to life through creative
+                Graphic Design, Branding, Printing,
+                Large Format Printing, DTF Printing,
+                Framing, Photography and Souvenir Production.
+
+            </p>
+
+            <a href="#services" class="btn">
+                Explore Services
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- SERVICES -->
+
+    <section id="services">
+
+        <h2>Our Services</h2>
+
+        <div class="cards">
+
+            <div class="card">
+
+                <i class="fas fa-pen-nib"></i>
+
+                <h3>Graphic Design</h3>
+
+                <p>
+                    Professional and creative designs
+                    for every business.
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <i class="fas fa-print"></i>
+
+                <h3>Printing</h3>
+
+                <p>
+
+                    Quality printing with
+                    premium finishing.
+
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <i class="fas fa-image"></i>
+
+                <h3>Large Format</h3>
+
+                <p>
+
+                    Banners, Flex,
+                    Stickers and Signages.
+
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <i class="fas fa-shirt"></i>
+
+                <h3>DTF Printing</h3>
+
+                <p>
+
+                    Premium Direct-to-Film
+                    Printing Solutions.
+
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <i class="fas fa-camera"></i>
+
+                <h3>Photography</h3>
+
+                <p>
+
+                    Indoor and Outdoor
+                    Photography Services.
+
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <i class="fas fa-gift"></i>
+
+                <h3>Souvenirs</h3>
+
+                <p>
+
+                    Customized gifts,
+                    mugs, pillows and more.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- CONTACT -->
+
+    <section class="contact">
+
+        <h2>Contact Us</h2>
+
+        <div class="contact-box">
+
+            <p>
+
+                <i class="fas fa-phone"></i>
+
+                08107262707
+
+            </p>
+
+            <p>
+
+                <i class="fab fa-whatsapp"></i>
+
+                07036160117
+
+            </p>
+
+            <p>
+
+                <i class="fas fa-location-dot"></i>
+
+                Ado Ekiti,
+                Ekiti State.
+
+            </p>
+
+            <p>
+
+                <i class="fab fa-facebook"></i>
+
+                Adekunle Oluwasegun
+
+            </p>
+
+            <p>
+
+                <i class="fab fa-tiktok"></i>
+
+                @Dynamoprintsconcept
+
+            </p>
+
+        </div>
+
+        <a href="https://wa.me/2347036160117" class="whatsapp">
+
+            Chat With Us
+
+        </a>
+
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <h3>Dynamo Conceptz</h3>
+
+        <p>
+
+            Design is Intelligence Made Visible.
+
+        </p>
+
+        <small>
+
+            © 2026 Dynamo Conceptz.
+            All Rights Reserved.
+
+        </small>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
